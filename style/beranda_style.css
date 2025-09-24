@@ -1,0 +1,593 @@
+    body{
+        padding: 0;
+        background-color: #181A1C;
+        font-family: "Lato", sans-serif;
+        color: #fff;
+    }
+
+    .episode-baru {
+        border: 1px solid #0F1E93;
+        border-radius: 20px;
+        background-color: #0F1E93;
+        width: max-content;
+        margin: 10px 0;
+        padding: 0 5px;
+    }
+
+    .footer-image{
+        display: none;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        }
+
+        .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tersembunyi dulu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #22282A;
+  min-width: 150px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Saat .dropdown atau anaknya dalam keadaan fokus */
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color: #0F1E93;
+}
+
+.dropdown img {
+  cursor: pointer;
+}
+
+
+    ul{
+        padding-left: 0;
+        padding-right: 20px;
+    }
+    footer li{
+        list-style-type: none;
+        padding-top: 20px;
+    }
+
+    /* NAV */
+    .container{
+        margin: 20px 70px 20px 70px;
+    }
+    p,a, button{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigasi{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* Main content */
+    .popular {
+        background-image: url(../img/Rectangle\ 9.png);
+        height: 587px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+    }
+
+    .head-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tombol{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .left{
+        display: flex;
+        gap: 20px;
+    }
+
+    .border{
+        border-radius: 30px;
+        padding: 10px 25px;
+    }
+
+    button.border:nth-child(1){
+        background-color: #0F1E93;
+        border: 1px solid #0F1E93;
+    }
+
+    button.border:nth-child(2){
+        background-color: #22282A;
+        border: 1px solid #22282A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .tombol p{
+        border: 1px solid #C1C2C4;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .text{
+        width: 50%;
+    }
+
+    .tombol img:nth-child(2){
+        border: 1px solid #C1C2C4;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    /* Last watch */
+
+    .second{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 40px 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .scroll{
+        scroll-behavior: smooth;
+        anchor-name: --scroll;
+        scroll-snap-type: x mandatory;
+    }
+    .scroll::-webkit-scrollbar{
+        display: none;
+    }
+
+    .scroll::scroll-button(right), .scroll::scroll-button(left){
+        content: '>';
+        border: none;
+        background-color: #22282A;
+        font-family: Consolas;
+        font-size: 3rem;
+        color: white;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        padding-bottom: .1em;
+        cursor: pointer;
+        position: fixed;
+        position-anchor: --scroll;
+        position-area: right center;
+        translate: -50%;
+    }
+
+    .scroll::scroll-button(left){
+        content: '<';
+        position-area: left center;
+        translate: 50%;
+    }
+
+    .scroll::scroll-button(right):disabled, .scroll::scroll-button(left):disabled{
+        opacity: 0.5;
+        cursor: auto;
+    }
+    .scroll-2{
+        scroll-behavior: smooth;
+        anchor-name: --scroll-2;
+        scroll-snap-type: x mandatory;
+    }
+    .scroll-2::-webkit-scrollbar{
+        display: none;
+    }
+
+    .scroll-2::scroll-button(right), .scroll-2::scroll-button(left){
+        content: '>';
+        border: none;
+        background-color: #22282A;
+        font-family: Consolas;
+        font-size: 3rem;
+        color: white;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        padding-bottom: .1em;
+        cursor: pointer;
+        position: fixed;
+        position-anchor: --scroll-2;
+        position-area: right center;
+        translate: -50%;
+    }
+
+    .scroll-2::scroll-button(left){
+        content: '<';
+        position-area: left center;
+        translate: 50%;
+    }
+
+    .scroll-2::scroll-button(right):disabled, .scroll-2::scroll-button(left):disabled{
+        opacity: 0.5;
+        cursor: auto;
+    }
+    .scroll-3{
+        scroll-behavior: smooth;
+        anchor-name: --scroll-3;
+        scroll-snap-type: x mandatory;
+    }
+    .scroll-3::-webkit-scrollbar{
+        display: none;
+    }
+
+    .scroll-3::scroll-button(right), .scroll-3::scroll-button(left){
+        content: '>';
+        border: none;
+        background-color: #22282A;
+        font-family: Consolas;
+        font-size: 3rem;
+        color: white;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        padding-bottom: .1em;
+        cursor: pointer;
+        position: fixed;
+        position-anchor: --scroll-3;
+        position-area: right center;
+        translate: -50%;
+    }
+
+    .scroll-3::scroll-button(left){
+        content: '<';
+        position-area: left center;
+        translate: 50%;
+    }
+
+    .scroll-3::scroll-button(right):disabled, .scroll-3::scroll-button(left):disabled{
+        opacity: 0.5;
+        cursor: auto;
+    }
+    .scroll-4{
+        scroll-behavior: smooth;
+        anchor-name: --scroll-4;
+        scroll-snap-type: x mandatory;
+    }
+    .scroll-4::-webkit-scrollbar{
+        display: none;
+    }
+
+    .scroll-4::scroll-button(right), .scroll-4::scroll-button(left){
+        content: '>';
+        border: none;
+        background-color: #22282A;
+        font-family: Consolas;
+        font-size: 3rem;
+        color: white;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        padding-bottom: .1em;
+        cursor: pointer;
+        position: fixed;
+        position-anchor: --scroll-4;
+        position-area: right center;
+        translate: -50%;
+    }
+
+    .scroll-4::scroll-button(left){
+        content: '<';
+        position-area: left center;
+        translate: 50%;
+    }
+
+    .scroll-4::scroll-button(right):disabled, .scroll-4::scroll-button(left):disabled{
+        opacity: 0.5;
+        cursor: auto;
+    }
+
+    .rating img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 30;
+        margin: 0 20px;
+    }
+    /* section 3 */
+    section{
+        margin: 50px 0;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 40px 0;
+    }
+
+    
+    /* section 5 */
+    .section-5{
+        margin-bottom: 100px;
+    }
+
+    /* series umum */
+    .series {
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+
+    .series img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    }
+
+    /* label Top 10 */
+    .top-10 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #B71F1D;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    }
+
+    /* label Episode Baru */
+    .episode-baru-2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #0F1E93;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    }
+
+    /* footer */
+
+    footer{
+        border-top: 1px solid #E7E3FC3B;
+    }
+
+    .copyright{
+        color: #C1C2C4;
+    }
+    .footer {
+        padding: 50px 0 ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-logo{
+        margin-bottom: 10px;
+    }
+    .genre-list{
+        display: flex;
+    }
+
+
+
+    @media only screen and (max-width: 600px) {
+        /* Text & font size lebih kecil */
+        h1 {
+            font-size: 1.3rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        a {
+            font-size: 0.8rem;
+        }
+        p, label, button {
+            font-size: 0.6rem;
+        }
+
+        /* last image */
+
+        .container{
+            margin: 30px;
+        }
+
+    .rating img{
+        scroll-snap-align: start;
+        height: 100%;
+        width: max-content;
+        object-fit: cover;
+        display: block;
+        aspect-ratio: 16/9;
+    }
+
+
+    .last-image {
+        flex: 0 0 auto;
+        width: 150px;           /* seragam di mobile */
+        aspect-ratio: 2 / 3;    /* rasio poster */
+    }
+
+    .last-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .last-image .overlay {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+
+    .rating img.arrow {
+        width: 24px;
+        height: 24px;
+    }
+        /* Header & Navigasi */
+        .containers {
+            margin: 10px;
+        }
+
+        nav {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navigasi {
+            gap: 10px;
+        }
+
+        .logo img:nth-child(2) {
+            display: none;
+        }
+
+        .header img {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Tombol */
+        .border {
+            padding: 5px 10px;
+            font-size: 0.7rem;
+        }
+        .tombol img:nth-child(2) {
+            border: 1px solid #C1C2C4;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        /* Hero section */
+        .popular {
+            height: auto;
+            padding: 20px 0;
+            background-size: cover;
+            background-position: center;
+        }
+        .text {
+            width: 100%;
+        }
+
+        /* Section "Melanjutkan Tonton Film" → scroll horizontal */
+        .second {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+        }
+
+        /* Grid umum (top rating, trending, rilis baru) → scroll horizontal */
+        .grid {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+        }
+
+        /* Buat semua gambar responsif & sama */
+        .series {
+            flex: 0 0 auto;
+            width: 150px;             /* lebar seragam */
+            aspect-ratio: 2 / 3;      /* rasio poster film */
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .series img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;        /* gambar isi penuh */
+            display: block;
+        }
+
+        /* Footer → jadi 1 kolom */
+        .footer {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .genre, .bantuan{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .genre-list {
+            display: none;
+        }
+
+        .footer-image{
+            display: block;
+        }
+
+        .genre p, .bantuan p{
+            font-size: 1.5rem;
+        }
+        .bantuan ul{
+            display: none;
+        }
+
+        /* Section 4 scrollable */
+        .section-4 {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+        }
+    }
+
+/* Style hanya untuk layar antara 768px - 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .second{
+        display: flex;
+    }
+    .grid{
+        display: flex;
+    }
+}

@@ -1,0 +1,152 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/login_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1, p, label, a{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+a:hover{
+    color: #3D4142;
+}
+h1{
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Lato;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181A1CD6;
+    justify-content: center;
+    width: 529px;
+    border-radius: 8px;
+    padding: 30px 30px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 15px;
+}
+
+input{
+    background-color: transparent;
+    border-radius: 24px;
+    border: 1px solid #E7E3FC3B;
+    width: 449px;
+    height: 50px;
+    color: white;
+    transition: all 0.2s;
+}
+
+input:hover{
+    background-color: #3D4142;
+}
+
+.option{
+    display: flex;
+    gap: 150px;
+}
+
+.option p{
+    color: lightgrey;
+}
+
+button{
+    width: 449px;
+    background-color: transparent;
+    border: 1px solid #E7E3FC3B;
+    border-radius: 24px;
+    height: 50px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+    transition: all 0.2s;
+}
+
+button:hover{
+    background-color: #3D4142;
+}
+
+body.register{
+    background-image: url(../img/register_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.register{
+    margin-top: 15px;
+}
+
+.register .form{
+    position: relative;
+    top: 10%;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        max-height: 709px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    p, a, label{
+        font-size: 10px;
+    }
+
+    .logo{
+        height: 24px;
+    }
+    form{
+        width: 280px;
+        max-height: 384px;
+    }
+
+    input, button{
+        width: 260px;
+        height: 28px;
+    }
+
+    .option{
+        gap: 73px;
+    }
+}
